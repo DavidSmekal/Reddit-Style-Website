@@ -1,0 +1,20 @@
+#signup {
+    display: inline-block;
+    margin-left: 20%;
+    margin-top: 10%;
+    padding: 5%;
+    background-color: #EEEEEE;
+    border-radius: 15px;
+}
+
+#login {
+    display: inline-block;
+    margin-top: 10%;
+    padding: 5%;
+    background-color: #EEEEEE;
+    border-radius: 15px;
+}
+
+#loginforms {
+    position: relative;
+}

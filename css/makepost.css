@@ -1,0 +1,20 @@
+#post_content {
+    background-color: #EEEEEE;
+    position: absolute;
+    padding: 5%;
+    border-radius: 15px;
+    margin-left: 30%;
+    margin-top: 10%;
+    width: 22%;
+}
+
+#post_content input, textarea, select {
+    border-radius: 10px;
+    height: 30px;
+    margin: 5px;
+    width: 100%;
+}
+
+textarea {
+    height: 200px;
+}

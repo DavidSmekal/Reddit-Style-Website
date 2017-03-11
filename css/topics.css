@@ -1,0 +1,60 @@
+/* this will be the CSS for all the topics pages */
+
+#placeholder_for_content {
+    background-color: #EEEEEE;
+    border-radius: 15px;
+    width: 70%;
+    height: 45%;
+    margin-left: 13%;
+    margin-top: 4%;
+    position: relative;
+}
+
+
+/* this flips the username and date tags on top of the div */
+
+#topOfDiv {
+    transform: translateY(-100%);
+    margin-left: 10px;
+}
+
+#topOfDiv a {
+    text-decoration: none;
+}
+
+#post_comment {
+    padding: 1%;
+    background-color: #EEEEEE;
+    border-radius: 15px;
+    position: absolute;
+    margin-left: 12.5%;
+    width: 50%;
+}
+
+#post_comment input {
+    width: 100%;
+}
+
+.placeholder_for_comments {
+    background-color: #EEEEEE;
+    border-radius: 15px;
+    position: absolute;
+    margin-left: 15%;
+    width: 40%;
+    transform: translateY(100%);
+    margin-top: 56px;
+}
+
+.placeholder_for_comments p {
+    text-align: center;
+}
+
+#placeholder_for_content p {
+    text-align: center;
+}
+
+
+/*
+.wrapper{position:relative;}
+.bottom{position:absolute; bottom:0;}
+*/

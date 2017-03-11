@@ -1,0 +1,26 @@
+#page_body_left {
+    display: inline-block;
+    background-color: #EEEEEE;
+    margin-left: 20%;
+    margin-top: 10%;
+    padding: 5%;
+    border-radius: 15px;
+}
+
+#page_body_right {
+    display: inline-block;
+    padding: 5%;
+    background-color: #EEEEEE;
+    border-radius: 15px;
+}
+
+#page_body_right input {
+    border-radius: 10px;
+    height: 30px;
+    margin: 5px;
+    width: 300px;
+}
+
+#page_body_left h2 {
+    text-align: center;
+}

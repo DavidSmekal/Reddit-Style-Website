@@ -1,0 +1,117 @@
+/*This file will keep all the general styling. Styling for specific pages will be kept in their own specific css file*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-bottom: 1px solid blue;
+}
+
+li {
+    float: left;
+}
+
+.float_right {
+    float: right;
+}
+
+li a {
+    font-family: monospace;
+    font-weight: bold;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #2CB2DF;
+}
+
+.active {
+    background-color: red;
+}
+
+#headline {
+    background-color: #2CB2DF;
+    margin-left: 25px;
+    position: relative;
+    border-radius: 5px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.page_body {
+    background-color: #2CB2DF;
+    width: 72%;
+    height: 84%;
+    float: left;
+    position: absolute;
+    margin-left: 2%;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+#right_column {
+    background-color: #2CB2DF;
+    float: right;
+    width: 20%;
+    height: 800px;
+    position: relative;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+
+/* style's the text inputs to be larger */
+
+.textfields {
+    border-radius: 10px;
+    height: 30px;
+    margin: 5px;
+    width: 300px;
+}
+
+button {
+    width: 200px;
+    height: 30px;
+    position: relative;
+    text-align: center;
+    margin-left: 33%;
+    margin-top: 10%;
+    display: inline-block;
+}
+
+input:focus {}
+
+
+/* class that resizes the images */
+
+.resize {
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    clear: both;
+    padding: 1%;
+    border-radius: 5px;
+    font-family: monospace;
+    font-weight: bold;
+    display: block;
+}
+
+body {
+    background-color: #155970;
+}
+
+p, label, input, option, select, a, h2 {
+    font-family: monospace;
+    font-weight: bold;
+}
+
+#search_and_post input, form {
+    width: 100%;
+}
