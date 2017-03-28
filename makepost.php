@@ -1,3 +1,13 @@
+<?php
+session_start();
+if (!(isset($_SESSION['username']))){
+//user is not logged in
+header("Location: http://localhost/finalproject360/login.php");
+exit;
+}
+?>
+
+
 <!DOCTYPE html>
 <html>
 
@@ -9,15 +19,22 @@
 
 <body>
 
-    <ul>
-        <li><a href="homepage.html">Home</a></li>
-        <li><a href="topic1.html">Topic 1</a></li>
-        <li><a href="topic2.html">Topic 2</a></li>
-        <li><a href="topic3.html">Topic 3</a></li>
-        <li class="float_right"><a href="login.html">Login</a></li>
-        <li class="float_right"><a href="profile.html">Profile</a></li>
-        <li class="float_right"><a href="makepost.html">Make Post</a></li>
-    </ul>
+<ul>
+    <li><a href="homepage.php">Home</a></li>
+    <li><a href="topic1.php">Liberal</a></li>
+    <li><a href="topic2.php">Libertarian</a></li>
+    <li><a href="topic3.php">Conservative</a></li>
+    <?php if(isset($_SESSION['username'])){ ?>
+        <li class="float_right"><a href="php/loginScript.php?action=logout">Logout</a></li>
+    <?php }else{ ?>
+        <li class="float_right"><a href="login.php">Login</a></li>
+    <?php } ?>
+    <li class="float_right"><a href="profile.php">Profile</a></li>
+    <li class="float_right"><a href="makepost.php">Make Post</a></li>
+    <?php if(isset($_SESSION['username']) && $_SESSION['username'] == 'admin'){ ?>
+        <li class="float_right"><a href="administratorPage.php">Administrator</a></li>
+    <?php } ?>
+</ul>
 
     <div id="headline">
         <h1>Post: Create a post</h1>
@@ -27,15 +44,15 @@
     <div class="page_body">
         <div id="post_content">
             <label>Create Post</label>
-            <form action="homepage.html" method="post">
+            <form action="php/makepost.php" method="POST">
                 <input type="text" name="title" placeholder="Title"><br>
-                <textarea name="Text1" cols="40" rows="5" placeholder="Post Content"></textarea><br>
+                <textarea name="content" cols="40" rows="5" placeholder="Post Content"></textarea><br>
                 <label>Board:</label><br/>
                 <select name="continent">
              <option>Choose board</option>
-             <option>Topic 1</option>
-             <option>Topic 2</option>
-             <option>Topic 3</option>
+             <option>Liberal</option>
+             <option>Libertarian</option>
+             <option>Conservative</option>
           </select>
                 <input type="submit" value="Submit">
             </form>
@@ -45,8 +62,10 @@
     <!-- This is the side column on the right -->
     <div id="right_column">
         <div id="search_and_post">
-            <input class="textfields" type="text" name="search" placeholder="Search...">
-            <form action="makepost.html">
+            <form action="searchResults.php" method="post">
+                <input class="textfields" type="text" name="search" placeholder="Search...">
+            </form>
+            <form action="makepost.php">
                 <input type="submit" class="textfields" value="Make New Post" />
             </form>
         </div>
@@ -63,7 +82,6 @@
             <a href="#">Latest Post 3</a><br><br>
         </div>
     </div>
-
     <footer>
         <a href="#">Home</a> |
         <a href="#">Browse</a> |
@@ -72,7 +90,7 @@
         <a href="#">Contact Us</a>
         <p><i>Copyright 2017 David Smekal</i></p>
     </footer>
-
 </body>
 
 </html>
+

@@ -46,9 +46,11 @@ li a:hover:not(.active) {
 .page_body {
     background-color: #2CB2DF;
     width: 72%;
-    height: 84%;
+    position:relative;
+
+    height: auto;
+
     float: left;
-    position: absolute;
     margin-left: 2%;
     padding: 1%;
     border-radius: 5px;
@@ -101,6 +103,7 @@ footer {
     font-family: monospace;
     font-weight: bold;
     display: block;
+
 }
 
 body {
