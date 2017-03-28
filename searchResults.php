@@ -112,20 +112,87 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <input class="textfields" type="text" name="search" placeholder="Search...">
         </form>
         <form action="makepost.php">
-            <input type="submit" class="textfields" value="Make New Post" />
+            <input type="submit" class="textfields" value="Make New Post"/>
         </form>
     </div>
     <div id="trending_posts">
         <h4>Popular Posts</h4>
         <hr>
-        <a href="#">Popular Post 1</a><br><br>
-        <a href="#">Popular Post 2</a><br><br>
-        <a href="#">Popular Post 3</a><br><br>
+        <?php
+
+        $host = "localhost";
+        $database = "finalproject360";
+        $user = "root";
+        $password = "";
+
+        $connection = mysqli_connect($host, $user, $password, $database);
+
+        $error = mysqli_connect_error();
+        if ($error != null) {
+            $output = "<p>Unable to connect to database!</p>";
+            exit($output);
+        } else {
+
+            $sql2 = "SELECT * FROM blogpost1 UNION SELECT * FROM blogpost2 UNION SELECT * FROM blogpost3 ORDER BY rand() LIMIT 3";
+
+            $results2 = mysqli_query($connection, $sql2);
+
+
+            while ($row2 = mysqli_fetch_assoc($results2)) {
+
+                $popular = $row2['title'];
+
+                echo "<a href='#'>$popular</a><br><br>";
+
+
+            }
+
+        }
+
+        mysqli_free_result($results2);
+        mysqli_close($connection);
+
+        ?>
         <h4>Latest Posts</h4>
         <hr>
-        <a href="#">Latest Post 1</a><br><br>
-        <a href="#">Latest Post 2</a><br><br>
-        <a href="#">Latest Post 3</a><br><br>
+
+        <?php
+
+        $host = "localhost";
+        $database = "finalproject360";
+        $user = "root";
+        $password = "";
+
+        $connection = mysqli_connect($host, $user, $password, $database);
+
+        $error = mysqli_connect_error();
+        if ($error != null) {
+            $output = "<p>Unable to connect to database!</p>";
+            exit($output);
+        } else {
+
+            $sql2 = "SELECT * FROM blogpost1 UNION SELECT * FROM blogpost2 UNION SELECT * FROM blogpost3 ORDER BY date DESC LIMIT 3";
+
+            $results2 = mysqli_query($connection, $sql2);
+
+
+            while ($row2 = mysqli_fetch_assoc($results2)) {
+
+                $latest = $row2['title'];
+
+
+                echo "<a href='#'>$latest</a><br><br>";
+
+
+            }
+
+        }
+
+        mysqli_free_result($results2);
+        mysqli_close($connection);
+
+        ?>
+
     </div>
 </div>
 <footer>

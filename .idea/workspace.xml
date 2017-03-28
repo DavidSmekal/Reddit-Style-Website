@@ -2,32 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9f3d061-85ce-4643-a58d-dcb02f0fdf8b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/david.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/administrator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/administratorPage.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/forgotpassword.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/latestPost.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/createComment.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/forgotPasswordScript.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/loginScript.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/makepost.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/newuser.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/profile.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/searchResults.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Homepage.html" afterPath="$PROJECT_DIR$/Homepage.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Topic1.html" afterPath="$PROJECT_DIR$/Topic1.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Topic2.html" afterPath="$PROJECT_DIR$/Topic2.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Topic3.html" afterPath="$PROJECT_DIR$/Topic3.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/login.html" afterPath="$PROJECT_DIR$/login.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/makepost.html" afterPath="$PROJECT_DIR$/makepost.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/profile.html" afterPath="$PROJECT_DIR$/profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/stylesheet.css" afterPath="$PROJECT_DIR$/css/stylesheet.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/topics.css" afterPath="$PROJECT_DIR$/css/topics.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template.html" afterPath="$PROJECT_DIR$/template.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/latestPost.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Homepage.php" afterPath="$PROJECT_DIR$/Homepage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Topic1.php" afterPath="$PROJECT_DIR$/Topic1.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Topic2.php" afterPath="$PROJECT_DIR$/Topic2.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Topic3.php" afterPath="$PROJECT_DIR$/Topic3.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator.php" afterPath="$PROJECT_DIR$/administrator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administratorPage.php" afterPath="$PROJECT_DIR$/administratorPage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forgotpassword.php" afterPath="$PROJECT_DIR$/forgotpassword.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/makepost.php" afterPath="$PROJECT_DIR$/makepost.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profile.php" afterPath="$PROJECT_DIR$/profile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/searchResults.php" afterPath="$PROJECT_DIR$/searchResults.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -63,16 +50,81 @@
       <file leaf-file-name="Homepage.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Homepage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+            <state relative-caret-position="1912">
+              <caret line="216" column="7" lean-forward="false" selection-start-line="216" selection-start-column="7" selection-end-line="216" selection-end-column="7" />
               <folding>
-                <marker date="1490666178749" expanded="true" signature="1739:1762" ph="SELECT * FRO... blogpost1" />
-                <marker date="1490666178749" expanded="true" signature="1739:1823" ph="SELECT * FRO... " />
-                <marker date="1490666178749" expanded="true" signature="1739:1847" ph="SELECT * FRO... " />
-                <marker date="1490666178749" expanded="true" signature="1770:1793" ph="SELECT * FRO... blogpost2" />
-                <marker date="1490666178749" expanded="true" signature="1800:1823" ph="SELECT * FRO... blogpost3" />
-                <marker date="1490666178749" expanded="true" signature="2287:2293" ph=" " />
-                <marker date="1490666178749" expanded="true" signature="2293:2299" ph=" " />
+                <marker date="1490667265376" expanded="true" signature="1739:1762" ph="SELECT * FRO... blogpost1" />
+                <marker date="1490667265376" expanded="true" signature="1739:1823" ph="SELECT * FRO... " />
+                <marker date="1490667265376" expanded="true" signature="1739:1847" ph="SELECT * FRO... " />
+                <marker date="1490667265376" expanded="true" signature="1770:1793" ph="SELECT * FRO... blogpost2" />
+                <marker date="1490667265376" expanded="true" signature="1800:1823" ph="SELECT * FRO... blogpost3" />
+                <marker date="1490667265376" expanded="true" signature="2287:2293" ph=" " />
+                <marker date="1490667265376" expanded="true" signature="2293:2299" ph=" " />
+                <marker date="1490667265376" expanded="true" signature="4633:4656" ph="SELECT * FRO... blogpost1" />
+                <marker date="1490667265376" expanded="true" signature="4633:4740" ph="SELECT * FRO... " />
+                <marker date="1490667265376" expanded="true" signature="4663:4686" ph="SELECT * FRO... blogpost2" />
+                <marker date="1490667265376" expanded="true" signature="4693:4716" ph="SELECT * FRO... blogpost3" />
+                <marker date="1490667265376" expanded="true" signature="5623:5646" ph="SELECT * FRO... blogpost1" />
+                <marker date="1490667265376" expanded="true" signature="5623:5733" ph="SELECT * FRO... " />
+                <marker date="1490667265376" expanded="true" signature="5653:5676" ph="SELECT * FRO... blogpost2" />
+                <marker date="1490667265376" expanded="true" signature="5683:5706" ph="SELECT * FRO... blogpost3" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forgotpassword.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forgotpassword.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="832">
+              <caret line="146" column="7" lean-forward="false" selection-start-line="146" selection-start-column="7" selection-end-line="146" selection-end-column="7" />
+              <folding>
+                <marker date="1490667272912" expanded="true" signature="2394:2417" ph="SELECT * FRO... blogpost1" />
+                <marker date="1490667272912" expanded="true" signature="2394:2501" ph="SELECT * FRO... " />
+                <marker date="1490667272912" expanded="true" signature="2424:2447" ph="SELECT * FRO... blogpost2" />
+                <marker date="1490667272912" expanded="true" signature="2454:2477" ph="SELECT * FRO... blogpost3" />
+                <marker date="1490667272912" expanded="true" signature="3292:3315" ph="SELECT * FRO... blogpost1" />
+                <marker date="1490667272912" expanded="true" signature="3292:3402" ph="SELECT * FRO... " />
+                <marker date="1490667272912" expanded="true" signature="3322:3345" ph="SELECT * FRO... blogpost2" />
+                <marker date="1490667272912" expanded="true" signature="3352:3375" ph="SELECT * FRO... blogpost3" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="administratorPage.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/administratorPage.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="832">
+              <caret line="154" column="7" lean-forward="false" selection-start-line="154" selection-start-column="7" selection-end-line="154" selection-end-column="7" />
+              <folding>
+                <marker date="1490667277439" expanded="true" signature="2704:2727" ph="SELECT * FRO... blogpost1" />
+                <marker date="1490667277439" expanded="true" signature="2704:2811" ph="SELECT * FRO... " />
+                <marker date="1490667277439" expanded="true" signature="2734:2757" ph="SELECT * FRO... blogpost2" />
+                <marker date="1490667277439" expanded="true" signature="2764:2787" ph="SELECT * FRO... blogpost3" />
+                <marker date="1490667277439" expanded="true" signature="3602:3625" ph="SELECT * FRO... blogpost1" />
+                <marker date="1490667277439" expanded="true" signature="3602:3712" ph="SELECT * FRO... " />
+                <marker date="1490667277439" expanded="true" signature="3632:3655" ph="SELECT * FRO... blogpost2" />
+                <marker date="1490667277439" expanded="true" signature="3662:3685" ph="SELECT * FRO... blogpost3" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="administrator.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/administrator.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1090">
+              <caret line="183" column="23" lean-forward="true" selection-start-line="183" selection-start-column="23" selection-end-line="183" selection-end-column="23" />
+              <folding>
+                <marker date="1490667285073" expanded="true" signature="2032:2089" ph="SELECT * FRO... " />
+                <marker date="1490667285073" expanded="true" signature="2993:3047" ph="SELECT * FRO... users" />
+                <marker date="1490667285073" expanded="true" signature="4019:4077" ph="SELECT * FRO... blogpost1" />
+                <marker date="1490667285073" expanded="true" signature="4019:4207" ph="SELECT * FRO... " />
+                <marker date="1490667285073" expanded="true" signature="4084:4142" ph="SELECT * FRO... blogpost2" />
+                <marker date="1490667285073" expanded="true" signature="4149:4207" ph="SELECT * FRO... blogpost3" />
+                <marker date="1490667285073" expanded="true" signature="4743:4749" ph=" " />
+                <marker date="1490667285073" expanded="true" signature="4749:4755" ph=" " />
               </folding>
             </state>
           </provider>
@@ -81,42 +133,131 @@
       <file leaf-file-name="searchResults.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/searchResults.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+            <state relative-caret-position="832">
+              <caret line="207" column="7" lean-forward="false" selection-start-line="207" selection-start-column="7" selection-end-line="207" selection-end-column="7" />
               <folding>
-                <marker date="1490666342424" expanded="true" signature="1648:1699" ph="SELECT * FRO... blogpost1" />
-                <marker date="1490666342424" expanded="true" signature="1648:1700" ph="SELECT * FRO... blogpost1" />
-                <marker date="1490666342424" expanded="true" signature="1648:1706" ph="SELECT * FRO... " />
-                <marker date="1490666342424" expanded="true" signature="1648:1759" ph="SELECT * FRO... " />
-                <marker date="1490666342424" expanded="true" signature="1648:1818" ph="SELECT * FRO... " />
-                <marker date="1490666342424" expanded="true" signature="1707:1759" ph="SELECT * FRO... blogpost2" />
-                <marker date="1490666342424" expanded="true" signature="1766:1818" ph="SELECT * FRO... blogpost3" />
-                <marker date="1490666342424" expanded="true" signature="2201:2207" ph=" " />
-                <marker date="1490666342424" expanded="true" signature="2207:2213" ph=" " />
+                <marker date="1490667244836" expanded="true" signature="1648:1699" ph="SELECT * FRO... blogpost1" />
+                <marker date="1490667244836" expanded="true" signature="1648:1700" ph="SELECT * FRO... blogpost1" />
+                <marker date="1490667244836" expanded="true" signature="1648:1706" ph="SELECT * FRO... " />
+                <marker date="1490667244836" expanded="true" signature="1648:1759" ph="SELECT * FRO... " />
+                <marker date="1490667244836" expanded="true" signature="1648:1818" ph="SELECT * FRO... " />
+                <marker date="1490667244836" expanded="true" signature="1707:1759" ph="SELECT * FRO... blogpost2" />
+                <marker date="1490667244836" expanded="true" signature="1766:1818" ph="SELECT * FRO... blogpost3" />
+                <marker date="1490667244836" expanded="true" signature="2201:2207" ph=" " />
+                <marker date="1490667244836" expanded="true" signature="2207:2213" ph=" " />
+                <marker date="1490667244836" expanded="true" signature="3509:3532" ph="SELECT * FRO... blogpost1" />
+                <marker date="1490667244836" expanded="true" signature="3509:3616" ph="SELECT * FRO... " />
+                <marker date="1490667244836" expanded="true" signature="3539:3562" ph="SELECT * FRO... blogpost2" />
+                <marker date="1490667244836" expanded="true" signature="3569:3592" ph="SELECT * FRO... blogpost3" />
+                <marker date="1490667244836" expanded="true" signature="4407:4430" ph="SELECT * FRO... blogpost1" />
+                <marker date="1490667244836" expanded="true" signature="4407:4517" ph="SELECT * FRO... " />
+                <marker date="1490667244836" expanded="true" signature="4437:4460" ph="SELECT * FRO... blogpost2" />
+                <marker date="1490667244836" expanded="true" signature="4467:4490" ph="SELECT * FRO... blogpost3" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="latestPost.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/latestPost.php">
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-              <folding />
+            <state relative-caret-position="832">
+              <caret line="164" column="7" lean-forward="false" selection-start-line="164" selection-start-column="7" selection-end-line="164" selection-end-column="7" />
+              <folding>
+                <marker date="1490667260187" expanded="true" signature="3528:3551" ph="SELECT * FRO... blogpost1" />
+                <marker date="1490667260187" expanded="true" signature="3528:3635" ph="SELECT * FRO... " />
+                <marker date="1490667260187" expanded="true" signature="3558:3581" ph="SELECT * FRO... blogpost2" />
+                <marker date="1490667260187" expanded="true" signature="3588:3611" ph="SELECT * FRO... blogpost3" />
+                <marker date="1490667260187" expanded="true" signature="4426:4449" ph="SELECT * FRO... blogpost1" />
+                <marker date="1490667260187" expanded="true" signature="4426:4536" ph="SELECT * FRO... " />
+                <marker date="1490667260187" expanded="true" signature="4456:4479" ph="SELECT * FRO... blogpost2" />
+                <marker date="1490667260187" expanded="true" signature="4486:4509" ph="SELECT * FRO... blogpost3" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Topic1.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Topic1.php">
+      <file leaf-file-name="Topic3.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Topic3.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="104" column="13" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="111" selection-end-column="14" />
+            <state relative-caret-position="832">
+              <caret line="226" column="7" lean-forward="false" selection-start-line="226" selection-start-column="7" selection-end-line="226" selection-end-column="7" />
               <folding>
-                <marker date="1490665699638" expanded="true" signature="1576:1599" ph="SELECT * FRO... blogpost1" />
-                <marker date="1490665699638" expanded="true" signature="2039:2045" ph=" " />
-                <marker date="1490665699638" expanded="true" signature="2045:2051" ph=" " />
+                <marker date="1490667239232" expanded="true" signature="1729:1752" ph="SELECT * FRO... blogpost3" />
+                <marker date="1490667239232" expanded="true" signature="2152:2158" ph=" " />
+                <marker date="1490667239232" expanded="true" signature="2158:2164" ph=" " />
+                <marker date="1490667239232" expanded="true" signature="4303:4326" ph="SELECT * FRO... blogpost1" />
+                <marker date="1490667239232" expanded="true" signature="4303:4410" ph="SELECT * FRO... " />
+                <marker date="1490667239232" expanded="true" signature="4333:4356" ph="SELECT * FRO... blogpost2" />
+                <marker date="1490667239232" expanded="true" signature="4363:4386" ph="SELECT * FRO... blogpost3" />
+                <marker date="1490667239232" expanded="true" signature="5201:5224" ph="SELECT * FRO... blogpost1" />
+                <marker date="1490667239232" expanded="true" signature="5201:5311" ph="SELECT * FRO... " />
+                <marker date="1490667239232" expanded="true" signature="5231:5254" ph="SELECT * FRO... blogpost2" />
+                <marker date="1490667239232" expanded="true" signature="5261:5284" ph="SELECT * FRO... blogpost3" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Topic2.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Topic2.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="832">
+              <caret line="222" column="7" lean-forward="false" selection-start-line="222" selection-start-column="7" selection-end-line="222" selection-end-column="7" />
+              <folding>
+                <marker date="1490667239216" expanded="true" signature="1652:1675" ph="SELECT * FRO... blogpost2" />
+                <marker date="1490667239216" expanded="true" signature="2075:2081" ph=" " />
+                <marker date="1490667239216" expanded="true" signature="2081:2087" ph=" " />
+                <marker date="1490667239216" expanded="true" signature="4225:4248" ph="SELECT * FRO... blogpost1" />
+                <marker date="1490667239216" expanded="true" signature="4225:4332" ph="SELECT * FRO... " />
+                <marker date="1490667239216" expanded="true" signature="4255:4278" ph="SELECT * FRO... blogpost2" />
+                <marker date="1490667239216" expanded="true" signature="4285:4308" ph="SELECT * FRO... blogpost3" />
+                <marker date="1490667239216" expanded="true" signature="5123:5146" ph="SELECT * FRO... blogpost1" />
+                <marker date="1490667239216" expanded="true" signature="5123:5233" ph="SELECT * FRO... " />
+                <marker date="1490667239216" expanded="true" signature="5153:5176" ph="SELECT * FRO... blogpost2" />
+                <marker date="1490667239216" expanded="true" signature="5183:5206" ph="SELECT * FRO... blogpost3" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/profile.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="832">
+              <caret line="255" column="7" lean-forward="false" selection-start-line="255" selection-start-column="7" selection-end-line="255" selection-end-column="7" />
+              <folding>
+                <marker date="1490667250321" expanded="true" signature="1799:1818" ph="SELECT * FRO... users" />
+                <marker date="1490667250321" expanded="true" signature="2131:2177" ph="SELECT * FRO... users" />
+                <marker date="1490667250321" expanded="true" signature="2651:2707" ph="SELECT conte... userImages" />
+                <marker date="1490667250321" expanded="true" signature="3152:3428" ph="..." />
+                <marker date="1490667250321" expanded="true" signature="5092:5115" ph="SELECT * FRO... blogpost1" />
+                <marker date="1490667250321" expanded="true" signature="5092:5199" ph="SELECT * FRO... " />
+                <marker date="1490667250321" expanded="true" signature="5122:5145" ph="SELECT * FRO... blogpost2" />
+                <marker date="1490667250321" expanded="true" signature="5152:5175" ph="SELECT * FRO... blogpost3" />
+                <marker date="1490667250321" expanded="true" signature="5990:6013" ph="SELECT * FRO... blogpost1" />
+                <marker date="1490667250321" expanded="true" signature="5990:6100" ph="SELECT * FRO... " />
+                <marker date="1490667250321" expanded="true" signature="6020:6043" ph="SELECT * FRO... blogpost2" />
+                <marker date="1490667250321" expanded="true" signature="6050:6073" ph="SELECT * FRO... blogpost3" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="makepost.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/makepost.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="832">
+              <caret line="161" column="7" lean-forward="false" selection-start-line="161" selection-start-column="7" selection-end-line="161" selection-end-column="7" />
+              <folding>
+                <marker date="1490667255538" expanded="true" signature="2865:2888" ph="SELECT * FRO... blogpost1" />
+                <marker date="1490667255538" expanded="true" signature="2865:2972" ph="SELECT * FRO... " />
+                <marker date="1490667255538" expanded="true" signature="2895:2918" ph="SELECT * FRO... blogpost2" />
+                <marker date="1490667255538" expanded="true" signature="2925:2948" ph="SELECT * FRO... blogpost3" />
+                <marker date="1490667255538" expanded="true" signature="3763:3786" ph="SELECT * FRO... blogpost1" />
+                <marker date="1490667255538" expanded="true" signature="3763:3873" ph="SELECT * FRO... " />
+                <marker date="1490667255538" expanded="true" signature="3793:3816" ph="SELECT * FRO... blogpost2" />
+                <marker date="1490667255538" expanded="true" signature="3823:3846" ph="SELECT * FRO... blogpost3" />
               </folding>
             </state>
           </provider>
@@ -149,19 +290,19 @@
         <option value="$PROJECT_DIR$/php/profile.php" />
         <option value="$PROJECT_DIR$/php/loginScript.php" />
         <option value="$PROJECT_DIR$/css/topics.css" />
-        <option value="$PROJECT_DIR$/Topic2.php" />
+        <option value="$PROJECT_DIR$/template.html" />
+        <option value="$PROJECT_DIR$/php/makepost.php" />
         <option value="$PROJECT_DIR$/Topic1.php" />
         <option value="$PROJECT_DIR$/Topic3.php" />
-        <option value="$PROJECT_DIR$/template.html" />
+        <option value="$PROJECT_DIR$/Topic2.php" />
+        <option value="$PROJECT_DIR$/searchResults.php" />
         <option value="$PROJECT_DIR$/profile.php" />
+        <option value="$PROJECT_DIR$/makepost.php" />
         <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/Homepage.php" />
         <option value="$PROJECT_DIR$/forgotpassword.php" />
         <option value="$PROJECT_DIR$/administratorPage.php" />
         <option value="$PROJECT_DIR$/administrator.php" />
-        <option value="$PROJECT_DIR$/makepost.php" />
-        <option value="$PROJECT_DIR$/php/makepost.php" />
-        <option value="$PROJECT_DIR$/Homepage.php" />
-        <option value="$PROJECT_DIR$/searchResults.php" />
       </list>
     </option>
   </component>
@@ -342,15 +483,15 @@
       <option name="presentableId" value="Default" />
       <updated>1490157017467</updated>
       <workItem from="1490157018749" duration="6368000" />
-      <workItem from="1490558680914" duration="36056000" />
+      <workItem from="1490558680914" duration="36941000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42424000" />
+    <option name="totallyTimeSpent" value="43309000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15724947" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -443,10 +584,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1490665734120" expanded="true" signature="1799:1818" ph="SELECT * FRO... users" />
-            <marker date="1490665734120" expanded="true" signature="2131:2177" ph="SELECT * FRO... users" />
-            <marker date="1490665734120" expanded="true" signature="2651:2707" ph="SELECT conte... userImages" />
-            <marker date="1490665734120" expanded="true" signature="3152:3428" ph="..." />
+            <marker date="1490667250321" expanded="true" signature="1799:1818" ph="SELECT * FRO... users" />
+            <marker date="1490667250321" expanded="true" signature="2131:2177" ph="SELECT * FRO... users" />
+            <marker date="1490667250321" expanded="true" signature="2651:2707" ph="SELECT conte... userImages" />
+            <marker date="1490667250321" expanded="true" signature="3152:3428" ph="..." />
+            <marker date="1490667250321" expanded="true" signature="5092:5115" ph="SELECT * FRO... blogpost1" />
+            <marker date="1490667250321" expanded="true" signature="5092:5199" ph="SELECT * FRO... " />
+            <marker date="1490667250321" expanded="true" signature="5122:5145" ph="SELECT * FRO... blogpost2" />
+            <marker date="1490667250321" expanded="true" signature="5152:5175" ph="SELECT * FRO... blogpost3" />
+            <marker date="1490667250321" expanded="true" signature="5990:6013" ph="SELECT * FRO... blogpost1" />
+            <marker date="1490667250321" expanded="true" signature="5990:6100" ph="SELECT * FRO... " />
+            <marker date="1490667250321" expanded="true" signature="6020:6043" ph="SELECT * FRO... blogpost2" />
+            <marker date="1490667250321" expanded="true" signature="6050:6073" ph="SELECT * FRO... blogpost3" />
           </folding>
         </state>
       </provider>
@@ -576,96 +725,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Topic2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="31" column="19" lean-forward="false" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
-          <folding>
-            <marker date="1490665699622" expanded="true" signature="1652:1675" ph="SELECT * FRO... blogpost2" />
-            <marker date="1490665699622" expanded="true" signature="2075:2081" ph=" " />
-            <marker date="1490665699622" expanded="true" signature="2081:2087" ph=" " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Topic3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <marker date="1490665716430" expanded="true" signature="1729:1752" ph="SELECT * FRO... blogpost3" />
-            <marker date="1490665716430" expanded="true" signature="2152:2158" ph=" " />
-            <marker date="1490665716430" expanded="true" signature="2158:2164" ph=" " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="17" column="50" lean-forward="false" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="50" lean-forward="false" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
-          <folding>
-            <marker date="1490665734120" expanded="true" signature="1799:1818" ph="SELECT * FRO... users" />
-            <marker date="1490665734120" expanded="true" signature="2131:2177" ph="SELECT * FRO... users" />
-            <marker date="1490665734120" expanded="true" signature="2651:2707" ph="SELECT conte... userImages" />
-            <marker date="1490665734120" expanded="true" signature="3152:3428" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="50" lean-forward="false" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forgotpassword.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="50" lean-forward="false" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administratorPage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="50" lean-forward="false" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="50" lean-forward="false" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
-          <folding>
-            <marker date="1490665756972" expanded="true" signature="2032:2089" ph="SELECT * FRO... " />
-            <marker date="1490665756972" expanded="true" signature="2993:3047" ph="SELECT * FRO... users" />
-            <marker date="1490665756972" expanded="true" signature="4019:4077" ph="SELECT * FRO... blogpost1" />
-            <marker date="1490665756972" expanded="true" signature="4019:4207" ph="SELECT * FRO... " />
-            <marker date="1490665756972" expanded="true" signature="4084:4142" ph="SELECT * FRO... blogpost2" />
-            <marker date="1490665756972" expanded="true" signature="4149:4207" ph="SELECT * FRO... blogpost3" />
-            <marker date="1490665756972" expanded="true" signature="4743:4749" ph=" " />
-            <marker date="1490665756972" expanded="true" signature="4749:4755" ph=" " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/makepost.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="52" column="9" lean-forward="false" selection-start-line="52" selection-start-column="9" selection-end-line="54" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -682,57 +745,229 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/latestPost.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Topic1.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="104" column="13" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="111" selection-end-column="14" />
+        <state relative-caret-position="256">
+          <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="213" selection-end-column="7" />
           <folding>
-            <marker date="1490665699638" expanded="true" signature="1576:1599" ph="SELECT * FRO... blogpost1" />
-            <marker date="1490665699638" expanded="true" signature="2039:2045" ph=" " />
-            <marker date="1490665699638" expanded="true" signature="2045:2051" ph=" " />
+            <marker date="1490667193468" expanded="true" signature="1519:1542" ph="SELECT * FRO... blogpost1" />
+            <marker date="1490667193468" expanded="true" signature="1943:1949" ph=" " />
+            <marker date="1490667193468" expanded="true" signature="1949:1955" ph=" " />
+            <marker date="1490667193468" expanded="true" signature="4101:4124" ph="SELECT * FRO... blogpost1" />
+            <marker date="1490667193468" expanded="true" signature="4101:4208" ph="SELECT * FRO... " />
+            <marker date="1490667193468" expanded="true" signature="4131:4154" ph="SELECT * FRO... blogpost2" />
+            <marker date="1490667193468" expanded="true" signature="4161:4184" ph="SELECT * FRO... blogpost3" />
+            <marker date="1490667193468" expanded="true" signature="4999:5022" ph="SELECT * FRO... blogpost1" />
+            <marker date="1490667193468" expanded="true" signature="4999:5109" ph="SELECT * FRO... " />
+            <marker date="1490667193468" expanded="true" signature="5029:5052" ph="SELECT * FRO... blogpost2" />
+            <marker date="1490667193468" expanded="true" signature="5059:5082" ph="SELECT * FRO... blogpost3" />
+            <marker date="1490667193468" expanded="true" signature="5474:5487" ph="..." />
+            <marker date="1490667193468" expanded="true" signature="5474:5677" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Homepage.php">
+    <entry file="file://$PROJECT_DIR$/Topic3.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+        <state relative-caret-position="832">
+          <caret line="226" column="7" lean-forward="false" selection-start-line="226" selection-start-column="7" selection-end-line="226" selection-end-column="7" />
           <folding>
-            <marker date="1490666178749" expanded="true" signature="1739:1762" ph="SELECT * FRO... blogpost1" />
-            <marker date="1490666178749" expanded="true" signature="1739:1823" ph="SELECT * FRO... " />
-            <marker date="1490666178749" expanded="true" signature="1739:1847" ph="SELECT * FRO... " />
-            <marker date="1490666178749" expanded="true" signature="1770:1793" ph="SELECT * FRO... blogpost2" />
-            <marker date="1490666178749" expanded="true" signature="1800:1823" ph="SELECT * FRO... blogpost3" />
-            <marker date="1490666178749" expanded="true" signature="2287:2293" ph=" " />
-            <marker date="1490666178749" expanded="true" signature="2293:2299" ph=" " />
+            <marker date="1490667239232" expanded="true" signature="1729:1752" ph="SELECT * FRO... blogpost3" />
+            <marker date="1490667239232" expanded="true" signature="2152:2158" ph=" " />
+            <marker date="1490667239232" expanded="true" signature="2158:2164" ph=" " />
+            <marker date="1490667239232" expanded="true" signature="4303:4326" ph="SELECT * FRO... blogpost1" />
+            <marker date="1490667239232" expanded="true" signature="4303:4410" ph="SELECT * FRO... " />
+            <marker date="1490667239232" expanded="true" signature="4333:4356" ph="SELECT * FRO... blogpost2" />
+            <marker date="1490667239232" expanded="true" signature="4363:4386" ph="SELECT * FRO... blogpost3" />
+            <marker date="1490667239232" expanded="true" signature="5201:5224" ph="SELECT * FRO... blogpost1" />
+            <marker date="1490667239232" expanded="true" signature="5201:5311" ph="SELECT * FRO... " />
+            <marker date="1490667239232" expanded="true" signature="5231:5254" ph="SELECT * FRO... blogpost2" />
+            <marker date="1490667239232" expanded="true" signature="5261:5284" ph="SELECT * FRO... blogpost3" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Topic2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="832">
+          <caret line="222" column="7" lean-forward="false" selection-start-line="222" selection-start-column="7" selection-end-line="222" selection-end-column="7" />
+          <folding>
+            <marker date="1490667239216" expanded="true" signature="1652:1675" ph="SELECT * FRO... blogpost2" />
+            <marker date="1490667239216" expanded="true" signature="2075:2081" ph=" " />
+            <marker date="1490667239216" expanded="true" signature="2081:2087" ph=" " />
+            <marker date="1490667239216" expanded="true" signature="4225:4248" ph="SELECT * FRO... blogpost1" />
+            <marker date="1490667239216" expanded="true" signature="4225:4332" ph="SELECT * FRO... " />
+            <marker date="1490667239216" expanded="true" signature="4255:4278" ph="SELECT * FRO... blogpost2" />
+            <marker date="1490667239216" expanded="true" signature="4285:4308" ph="SELECT * FRO... blogpost3" />
+            <marker date="1490667239216" expanded="true" signature="5123:5146" ph="SELECT * FRO... blogpost1" />
+            <marker date="1490667239216" expanded="true" signature="5123:5233" ph="SELECT * FRO... " />
+            <marker date="1490667239216" expanded="true" signature="5153:5176" ph="SELECT * FRO... blogpost2" />
+            <marker date="1490667239216" expanded="true" signature="5183:5206" ph="SELECT * FRO... blogpost3" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/searchResults.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+        <state relative-caret-position="832">
+          <caret line="207" column="7" lean-forward="false" selection-start-line="207" selection-start-column="7" selection-end-line="207" selection-end-column="7" />
           <folding>
-            <marker date="1490666342424" expanded="true" signature="1648:1699" ph="SELECT * FRO... blogpost1" />
-            <marker date="1490666342424" expanded="true" signature="1648:1700" ph="SELECT * FRO... blogpost1" />
-            <marker date="1490666342424" expanded="true" signature="1648:1706" ph="SELECT * FRO... " />
-            <marker date="1490666342424" expanded="true" signature="1648:1759" ph="SELECT * FRO... " />
-            <marker date="1490666342424" expanded="true" signature="1648:1818" ph="SELECT * FRO... " />
-            <marker date="1490666342424" expanded="true" signature="1707:1759" ph="SELECT * FRO... blogpost2" />
-            <marker date="1490666342424" expanded="true" signature="1766:1818" ph="SELECT * FRO... blogpost3" />
-            <marker date="1490666342424" expanded="true" signature="2201:2207" ph=" " />
-            <marker date="1490666342424" expanded="true" signature="2207:2213" ph=" " />
+            <marker date="1490667244836" expanded="true" signature="1648:1699" ph="SELECT * FRO... blogpost1" />
+            <marker date="1490667244836" expanded="true" signature="1648:1700" ph="SELECT * FRO... blogpost1" />
+            <marker date="1490667244836" expanded="true" signature="1648:1706" ph="SELECT * FRO... " />
+            <marker date="1490667244836" expanded="true" signature="1648:1759" ph="SELECT * FRO... " />
+            <marker date="1490667244836" expanded="true" signature="1648:1818" ph="SELECT * FRO... " />
+            <marker date="1490667244836" expanded="true" signature="1707:1759" ph="SELECT * FRO... blogpost2" />
+            <marker date="1490667244836" expanded="true" signature="1766:1818" ph="SELECT * FRO... blogpost3" />
+            <marker date="1490667244836" expanded="true" signature="2201:2207" ph=" " />
+            <marker date="1490667244836" expanded="true" signature="2207:2213" ph=" " />
+            <marker date="1490667244836" expanded="true" signature="3509:3532" ph="SELECT * FRO... blogpost1" />
+            <marker date="1490667244836" expanded="true" signature="3509:3616" ph="SELECT * FRO... " />
+            <marker date="1490667244836" expanded="true" signature="3539:3562" ph="SELECT * FRO... blogpost2" />
+            <marker date="1490667244836" expanded="true" signature="3569:3592" ph="SELECT * FRO... blogpost3" />
+            <marker date="1490667244836" expanded="true" signature="4407:4430" ph="SELECT * FRO... blogpost1" />
+            <marker date="1490667244836" expanded="true" signature="4407:4517" ph="SELECT * FRO... " />
+            <marker date="1490667244836" expanded="true" signature="4437:4460" ph="SELECT * FRO... blogpost2" />
+            <marker date="1490667244836" expanded="true" signature="4467:4490" ph="SELECT * FRO... blogpost3" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/latestPost.php">
+    <entry file="file://$PROJECT_DIR$/profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-          <folding />
+        <state relative-caret-position="832">
+          <caret line="255" column="7" lean-forward="false" selection-start-line="255" selection-start-column="7" selection-end-line="255" selection-end-column="7" />
+          <folding>
+            <marker date="1490667250321" expanded="true" signature="1799:1818" ph="SELECT * FRO... users" />
+            <marker date="1490667250321" expanded="true" signature="2131:2177" ph="SELECT * FRO... users" />
+            <marker date="1490667250321" expanded="true" signature="2651:2707" ph="SELECT conte... userImages" />
+            <marker date="1490667250321" expanded="true" signature="3152:3428" ph="..." />
+            <marker date="1490667250321" expanded="true" signature="5092:5115" ph="SELECT * FRO... blogpost1" />
+            <marker date="1490667250321" expanded="true" signature="5092:5199" ph="SELECT * FRO... " />
+            <marker date="1490667250321" expanded="true" signature="5122:5145" ph="SELECT * FRO... blogpost2" />
+            <marker date="1490667250321" expanded="true" signature="5152:5175" ph="SELECT * FRO... blogpost3" />
+            <marker date="1490667250321" expanded="true" signature="5990:6013" ph="SELECT * FRO... blogpost1" />
+            <marker date="1490667250321" expanded="true" signature="5990:6100" ph="SELECT * FRO... " />
+            <marker date="1490667250321" expanded="true" signature="6020:6043" ph="SELECT * FRO... blogpost2" />
+            <marker date="1490667250321" expanded="true" signature="6050:6073" ph="SELECT * FRO... blogpost3" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/makepost.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="832">
+          <caret line="161" column="7" lean-forward="false" selection-start-line="161" selection-start-column="7" selection-end-line="161" selection-end-column="7" />
+          <folding>
+            <marker date="1490667255538" expanded="true" signature="2865:2888" ph="SELECT * FRO... blogpost1" />
+            <marker date="1490667255538" expanded="true" signature="2865:2972" ph="SELECT * FRO... " />
+            <marker date="1490667255538" expanded="true" signature="2895:2918" ph="SELECT * FRO... blogpost2" />
+            <marker date="1490667255538" expanded="true" signature="2925:2948" ph="SELECT * FRO... blogpost3" />
+            <marker date="1490667255538" expanded="true" signature="3763:3786" ph="SELECT * FRO... blogpost1" />
+            <marker date="1490667255538" expanded="true" signature="3763:3873" ph="SELECT * FRO... " />
+            <marker date="1490667255538" expanded="true" signature="3793:3816" ph="SELECT * FRO... blogpost2" />
+            <marker date="1490667255538" expanded="true" signature="3823:3846" ph="SELECT * FRO... blogpost3" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="832">
+          <caret line="164" column="7" lean-forward="false" selection-start-line="164" selection-start-column="7" selection-end-line="164" selection-end-column="7" />
+          <folding>
+            <marker date="1490667260187" expanded="true" signature="3528:3551" ph="SELECT * FRO... blogpost1" />
+            <marker date="1490667260187" expanded="true" signature="3528:3635" ph="SELECT * FRO... " />
+            <marker date="1490667260187" expanded="true" signature="3558:3581" ph="SELECT * FRO... blogpost2" />
+            <marker date="1490667260187" expanded="true" signature="3588:3611" ph="SELECT * FRO... blogpost3" />
+            <marker date="1490667260187" expanded="true" signature="4426:4449" ph="SELECT * FRO... blogpost1" />
+            <marker date="1490667260187" expanded="true" signature="4426:4536" ph="SELECT * FRO... " />
+            <marker date="1490667260187" expanded="true" signature="4456:4479" ph="SELECT * FRO... blogpost2" />
+            <marker date="1490667260187" expanded="true" signature="4486:4509" ph="SELECT * FRO... blogpost3" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Homepage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1912">
+          <caret line="216" column="7" lean-forward="false" selection-start-line="216" selection-start-column="7" selection-end-line="216" selection-end-column="7" />
+          <folding>
+            <marker date="1490667265376" expanded="true" signature="1739:1762" ph="SELECT * FRO... blogpost1" />
+            <marker date="1490667265376" expanded="true" signature="1739:1823" ph="SELECT * FRO... " />
+            <marker date="1490667265376" expanded="true" signature="1739:1847" ph="SELECT * FRO... " />
+            <marker date="1490667265376" expanded="true" signature="1770:1793" ph="SELECT * FRO... blogpost2" />
+            <marker date="1490667265376" expanded="true" signature="1800:1823" ph="SELECT * FRO... blogpost3" />
+            <marker date="1490667265376" expanded="true" signature="2287:2293" ph=" " />
+            <marker date="1490667265376" expanded="true" signature="2293:2299" ph=" " />
+            <marker date="1490667265376" expanded="true" signature="4633:4656" ph="SELECT * FRO... blogpost1" />
+            <marker date="1490667265376" expanded="true" signature="4633:4740" ph="SELECT * FRO... " />
+            <marker date="1490667265376" expanded="true" signature="4663:4686" ph="SELECT * FRO... blogpost2" />
+            <marker date="1490667265376" expanded="true" signature="4693:4716" ph="SELECT * FRO... blogpost3" />
+            <marker date="1490667265376" expanded="true" signature="5623:5646" ph="SELECT * FRO... blogpost1" />
+            <marker date="1490667265376" expanded="true" signature="5623:5733" ph="SELECT * FRO... " />
+            <marker date="1490667265376" expanded="true" signature="5653:5676" ph="SELECT * FRO... blogpost2" />
+            <marker date="1490667265376" expanded="true" signature="5683:5706" ph="SELECT * FRO... blogpost3" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forgotpassword.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="832">
+          <caret line="146" column="7" lean-forward="false" selection-start-line="146" selection-start-column="7" selection-end-line="146" selection-end-column="7" />
+          <folding>
+            <marker date="1490667272912" expanded="true" signature="2394:2417" ph="SELECT * FRO... blogpost1" />
+            <marker date="1490667272912" expanded="true" signature="2394:2501" ph="SELECT * FRO... " />
+            <marker date="1490667272912" expanded="true" signature="2424:2447" ph="SELECT * FRO... blogpost2" />
+            <marker date="1490667272912" expanded="true" signature="2454:2477" ph="SELECT * FRO... blogpost3" />
+            <marker date="1490667272912" expanded="true" signature="3292:3315" ph="SELECT * FRO... blogpost1" />
+            <marker date="1490667272912" expanded="true" signature="3292:3402" ph="SELECT * FRO... " />
+            <marker date="1490667272912" expanded="true" signature="3322:3345" ph="SELECT * FRO... blogpost2" />
+            <marker date="1490667272912" expanded="true" signature="3352:3375" ph="SELECT * FRO... blogpost3" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administratorPage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="832">
+          <caret line="154" column="7" lean-forward="false" selection-start-line="154" selection-start-column="7" selection-end-line="154" selection-end-column="7" />
+          <folding>
+            <marker date="1490667277439" expanded="true" signature="2704:2727" ph="SELECT * FRO... blogpost1" />
+            <marker date="1490667277439" expanded="true" signature="2704:2811" ph="SELECT * FRO... " />
+            <marker date="1490667277439" expanded="true" signature="2734:2757" ph="SELECT * FRO... blogpost2" />
+            <marker date="1490667277439" expanded="true" signature="2764:2787" ph="SELECT * FRO... blogpost3" />
+            <marker date="1490667277439" expanded="true" signature="3602:3625" ph="SELECT * FRO... blogpost1" />
+            <marker date="1490667277439" expanded="true" signature="3602:3712" ph="SELECT * FRO... " />
+            <marker date="1490667277439" expanded="true" signature="3632:3655" ph="SELECT * FRO... blogpost2" />
+            <marker date="1490667277439" expanded="true" signature="3662:3685" ph="SELECT * FRO... blogpost3" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1090">
+          <caret line="183" column="23" lean-forward="true" selection-start-line="183" selection-start-column="23" selection-end-line="183" selection-end-column="23" />
+          <folding>
+            <marker date="1490667285073" expanded="true" signature="2032:2089" ph="SELECT * FRO... " />
+            <marker date="1490667285073" expanded="true" signature="2993:3047" ph="SELECT * FRO... users" />
+            <marker date="1490667285073" expanded="true" signature="4019:4077" ph="SELECT * FRO... blogpost1" />
+            <marker date="1490667285073" expanded="true" signature="4019:4207" ph="SELECT * FRO... " />
+            <marker date="1490667285073" expanded="true" signature="4084:4142" ph="SELECT * FRO... blogpost2" />
+            <marker date="1490667285073" expanded="true" signature="4149:4207" ph="SELECT * FRO... blogpost3" />
+            <marker date="1490667285073" expanded="true" signature="4743:4749" ph=" " />
+            <marker date="1490667285073" expanded="true" signature="4749:4755" ph=" " />
+          </folding>
         </state>
       </provider>
     </entry>
