@@ -37,7 +37,8 @@ session_start();
 
 
         <?php
-// this is going to populate the front page with 6 posts - 2 from each board
+
+// this is going to populate the front page with 6 random posts - 2 from each board
         $host = "localhost";
         $database = "finalproject360";
         $user = "root";
@@ -67,6 +68,7 @@ session_start();
                 $content = $row2['content'];
                 $date = $row2['date'];
                 $username = $row2['username'];
+                $postID = $row2['postID'];
 
                 echo '<div id="topOfDiv">';
                 echo "<a href=\"#\">$username</a>&nbsp;&nbsp;";
@@ -77,30 +79,7 @@ session_start();
                 echo "<p><a href=\"#\">$title</a></p>";
                 echo "<p>$content</p><br>";
                 echo "</div>";
-
-
-                //admin delete and edit post
-                //I don't know how to associate these with a post
-                if(isset($_SESSION['username']) && $_SESSION['username'] == 'admin') {
-                    echo "<div id='adminpannel'>";
-                    echo "<p>Edit</p>";
-                    echo "<p>Delete</p>";
-                    echo "</div>";
-                }
-
-                if(!(isset($_SESSION['username']))) {
-                    echo"<br><br><br>";
-                }
-
-                if(isset($_SESSION['username'])) {
-
-                    echo '<div id="post_comment">';
-                    echo '<form action="php/createComment.php" method="post">';
-                    echo '<input type="text" name="content" class="textfields" placeholder="Comment"><br>';
-                    echo '<input type="submit" value="Post">';
-                    echo '</form>';
-                    echo '</div><br>';
-                }
+                echo"<br><br><br>";
 
 
             }

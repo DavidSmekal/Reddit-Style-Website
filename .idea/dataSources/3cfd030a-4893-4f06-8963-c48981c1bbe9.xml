@@ -15,136 +15,271 @@
     <table id="9" parent="2" name="blogpost1"/>
     <table id="10" parent="2" name="blogpost2"/>
     <table id="11" parent="2" name="blogpost3"/>
-    <table id="12" parent="2" name="userimages"/>
-    <table id="13" parent="2" name="users"/>
-    <column id="14" parent="9" name="postID">
+    <table id="12" parent="2" name="commentspost1"/>
+    <table id="13" parent="2" name="commentspost2"/>
+    <table id="14" parent="2" name="commentspost3"/>
+    <table id="15" parent="2" name="userimages"/>
+    <table id="16" parent="2" name="users"/>
+    <column id="17" parent="9" name="postID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="15" parent="9" name="title">
+    <column id="18" parent="9" name="title">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="16" parent="9" name="content">
+    <column id="19" parent="9" name="content">
       <Position>3</Position>
       <DataType>text|0</DataType>
     </column>
-    <column id="17" parent="9" name="date">
+    <column id="20" parent="9" name="date">
       <Position>4</Position>
       <DataType>datetime|0</DataType>
     </column>
-    <column id="18" parent="9" name="username">
+    <column id="21" parent="9" name="username">
       <Position>5</Position>
       <DataType>varchar(30)|0</DataType>
     </column>
-    <index id="19" parent="9" name="username">
+    <index id="22" parent="9" name="username">
       <ColNames>username</ColNames>
     </index>
-    <key id="20" parent="9" name="PRIMARY">
+    <key id="23" parent="9" name="PRIMARY">
       <ColNames>postID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="21" parent="9" name="blogpost1_ibfk_1">
+    <foreign-key id="24" parent="9" name="blogpost1_ibfk_1">
       <ColNames>username</ColNames>
       <RefSchemaName>finalproject360</RefSchemaName>
       <RefTableName>users</RefTableName>
       <RefColNames>username</RefColNames>
     </foreign-key>
-    <column id="22" parent="10" name="postID">
+    <column id="25" parent="10" name="postID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="23" parent="10" name="title">
+    <column id="26" parent="10" name="title">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="24" parent="10" name="content">
+    <column id="27" parent="10" name="content">
       <Position>3</Position>
       <DataType>text|0</DataType>
     </column>
-    <column id="25" parent="10" name="date">
+    <column id="28" parent="10" name="date">
       <Position>4</Position>
       <DataType>datetime|0</DataType>
     </column>
-    <column id="26" parent="10" name="username">
+    <column id="29" parent="10" name="username">
       <Position>5</Position>
       <DataType>varchar(30)|0</DataType>
     </column>
-    <index id="27" parent="10" name="username">
+    <index id="30" parent="10" name="username">
       <ColNames>username</ColNames>
     </index>
-    <key id="28" parent="10" name="PRIMARY">
+    <key id="31" parent="10" name="PRIMARY">
       <ColNames>postID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="29" parent="10" name="blogpost2_ibfk_1">
+    <foreign-key id="32" parent="10" name="blogpost2_ibfk_1">
       <ColNames>username</ColNames>
       <RefSchemaName>finalproject360</RefSchemaName>
       <RefTableName>users</RefTableName>
       <RefColNames>username</RefColNames>
     </foreign-key>
-    <column id="30" parent="11" name="postID">
+    <column id="33" parent="11" name="postID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="31" parent="11" name="title">
+    <column id="34" parent="11" name="title">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="32" parent="11" name="content">
+    <column id="35" parent="11" name="content">
       <Position>3</Position>
       <DataType>text|0</DataType>
     </column>
-    <column id="33" parent="11" name="date">
+    <column id="36" parent="11" name="date">
       <Position>4</Position>
       <DataType>datetime|0</DataType>
     </column>
-    <column id="34" parent="11" name="username">
+    <column id="37" parent="11" name="username">
       <Position>5</Position>
       <DataType>varchar(30)|0</DataType>
     </column>
-    <index id="35" parent="11" name="username">
+    <index id="38" parent="11" name="username">
       <ColNames>username</ColNames>
     </index>
-    <key id="36" parent="11" name="PRIMARY">
+    <key id="39" parent="11" name="PRIMARY">
       <ColNames>postID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="37" parent="11" name="blogpost3_ibfk_1">
+    <foreign-key id="40" parent="11" name="blogpost3_ibfk_1">
       <ColNames>username</ColNames>
       <RefSchemaName>finalproject360</RefSchemaName>
       <RefTableName>users</RefTableName>
       <RefColNames>username</RefColNames>
     </foreign-key>
-    <column id="38" parent="12" name="userID">
+    <column id="41" parent="12" name="commentId">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="42" parent="12" name="content">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="43" parent="12" name="date">
+      <Position>3</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="44" parent="12" name="username">
+      <Position>4</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="45" parent="12" name="postID">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="46" parent="12" name="postID">
+      <ColNames>postID</ColNames>
+    </index>
+    <index id="47" parent="12" name="username">
+      <ColNames>username</ColNames>
+    </index>
+    <key id="48" parent="12" name="PRIMARY">
+      <ColNames>commentId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="49" parent="12" name="commentspost1_ibfk_2">
+      <ColNames>username</ColNames>
+      <RefSchemaName>finalproject360</RefSchemaName>
+      <RefTableName>blogpost1</RefTableName>
+      <RefColNames>username</RefColNames>
+    </foreign-key>
+    <foreign-key id="50" parent="12" name="commentspost1_ibfk_1">
+      <ColNames>postID</ColNames>
+      <RefSchemaName>finalproject360</RefSchemaName>
+      <RefTableName>blogpost1</RefTableName>
+      <RefColNames>postID</RefColNames>
+    </foreign-key>
+    <column id="51" parent="13" name="commentId">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="52" parent="13" name="content">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="53" parent="13" name="date">
+      <Position>3</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="54" parent="13" name="username">
+      <Position>4</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="55" parent="13" name="postID">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="56" parent="13" name="postID">
+      <ColNames>postID</ColNames>
+    </index>
+    <index id="57" parent="13" name="username">
+      <ColNames>username</ColNames>
+    </index>
+    <key id="58" parent="13" name="PRIMARY">
+      <ColNames>commentId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="59" parent="13" name="commentspost2_ibfk_2">
+      <ColNames>username</ColNames>
+      <RefSchemaName>finalproject360</RefSchemaName>
+      <RefTableName>blogpost1</RefTableName>
+      <RefColNames>username</RefColNames>
+    </foreign-key>
+    <foreign-key id="60" parent="13" name="commentspost2_ibfk_1">
+      <ColNames>postID</ColNames>
+      <RefSchemaName>finalproject360</RefSchemaName>
+      <RefTableName>blogpost1</RefTableName>
+      <RefColNames>postID</RefColNames>
+    </foreign-key>
+    <column id="61" parent="14" name="commentId">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="62" parent="14" name="content">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="63" parent="14" name="date">
+      <Position>3</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="64" parent="14" name="username">
+      <Position>4</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="65" parent="14" name="postID">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="66" parent="14" name="postID">
+      <ColNames>postID</ColNames>
+    </index>
+    <index id="67" parent="14" name="username">
+      <ColNames>username</ColNames>
+    </index>
+    <key id="68" parent="14" name="PRIMARY">
+      <ColNames>commentId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="69" parent="14" name="commentspost3_ibfk_2">
+      <ColNames>username</ColNames>
+      <RefSchemaName>finalproject360</RefSchemaName>
+      <RefTableName>blogpost1</RefTableName>
+      <RefColNames>username</RefColNames>
+    </foreign-key>
+    <foreign-key id="70" parent="14" name="commentspost3_ibfk_1">
+      <ColNames>postID</ColNames>
+      <RefSchemaName>finalproject360</RefSchemaName>
+      <RefTableName>blogpost1</RefTableName>
+      <RefColNames>postID</RefColNames>
+    </foreign-key>
+    <column id="71" parent="15" name="userID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="39" parent="12" name="contentType">
+    <column id="72" parent="15" name="contentType">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="40" parent="12" name="image">
+    <column id="73" parent="15" name="image">
       <Position>3</Position>
       <DataType>blob|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="41" parent="12" name="userID">
+    <index id="74" parent="15" name="userID">
       <ColNames>userID</ColNames>
     </index>
-    <key id="42" parent="12" name="PRIMARY">
+    <key id="75" parent="15" name="PRIMARY">
       <ColNames>userID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="43" parent="12" name="userimages_ibfk_1">
+    <foreign-key id="76" parent="15" name="userimages_ibfk_1">
       <ColNames>userID</ColNames>
       <RefSchemaName>finalproject360</RefSchemaName>
       <RefTableName>users</RefTableName>
@@ -152,56 +287,56 @@
       <OnUpdate>update</OnUpdate>
       <OnDelete>delete</OnDelete>
     </foreign-key>
-    <column id="44" parent="13" name="username">
+    <column id="77" parent="16" name="username">
       <Position>1</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="45" parent="13" name="email">
+    <column id="78" parent="16" name="email">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="46" parent="13" name="password">
+    <column id="79" parent="16" name="password">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="47" parent="13" name="userID">
+    <column id="80" parent="16" name="userID">
       <Position>4</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="48" parent="13" name="firstname">
+    <column id="81" parent="16" name="firstname">
       <Position>5</Position>
       <DataType>varchar(30)|0</DataType>
     </column>
-    <column id="49" parent="13" name="lastname">
+    <column id="82" parent="16" name="lastname">
       <Position>6</Position>
       <DataType>varchar(30)|0</DataType>
     </column>
-    <column id="50" parent="13" name="city">
+    <column id="83" parent="16" name="city">
       <Position>7</Position>
       <DataType>varchar(30)|0</DataType>
     </column>
-    <index id="51" parent="13" name="email">
+    <index id="84" parent="16" name="email">
       <ColNames>email</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="52" parent="13" name="userID">
+    <index id="85" parent="16" name="userID">
       <ColNames>userID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="53" parent="13" name="PRIMARY">
+    <key id="86" parent="16" name="PRIMARY">
       <ColNames>username</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="54" parent="13" name="email">
+    <key id="87" parent="16" name="email">
       <ColNames>email</ColNames>
       <UnderlyingIndexName>email</UnderlyingIndexName>
     </key>
-    <key id="55" parent="13" name="userID">
+    <key id="88" parent="16" name="userID">
       <ColNames>userID</ColNames>
       <UnderlyingIndexName>userID</UnderlyingIndexName>
     </key>

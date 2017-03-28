@@ -70,6 +70,7 @@ session_start();
             $content = $row2['content'];
             $date = $row2['date'];
             $username = $row2['username'];
+            $postID = $row2['postID'];
 
             echo '<div id="topOfDiv">';
             echo "<a href=\"#\">$username</a>&nbsp;&nbsp;";
@@ -83,24 +84,55 @@ session_start();
 
 
             //admin delete and edit post
-            //I don't know how to associate these with a post
-            if(isset($_SESSION['username']) && $_SESSION['username'] == 'admin') {
+            //I don't know how to edit yet
+            if (isset($_SESSION['username']) && $_SESSION['username'] == 'admin') {
                 echo "<div id='adminpannel'>";
                 echo "<p>Edit</p>";
-                echo "<p>Delete</p>";
+                echo '<form id="delete" method="post" action="php/deletePost_and_commentPost.php">';
+                echo "<input type='hidden' name='id' value=$postID>";
+                echo "<input type='hidden' name='board' value='blogpost2'>";
+                echo '<input type="submit" name="delete" value="Delete"/>';
                 echo "</div>";
             }
 
-            if(!(isset($_SESSION['username']))) {
-                echo"<br><br><br>";
+
+            if (!(isset($_SESSION['username']))) {
+                echo "<br>";
             }
 
-            if(isset($_SESSION['username'])) {
+            //sql query should go to get the comments
+            $sql3 = "SELECT * FROM commentspost2";
+
+            $results3 = mysqli_query($connection, $sql3);
+
+
+
+            while ($row3 = mysqli_fetch_assoc($results3)) {
+
+                $content = $row3['content'];
+                $postIDrow = $row3['postID'];
+                $username = $row3['username'];
+                //retrieves the postID.
+                if ($postIDrow == $postID) {
+
+                    echo '<div id="post_comment">';
+                    echo "<a href=\"#\">$username</a>&nbsp;&nbsp;";
+                    echo "<p>$content</p>";
+                    echo '</div>';
+
+                }
+
+            }
+
+            //comment post will only show up if user is logged in
+            if (isset($_SESSION['username'])) {
 
                 echo '<div id="post_comment">';
-                echo '<form action="php/b42fsd1.php" method="post">';
-                echo '<input type="text" name="content" class="textfields" placeholder="Comment"><br>';
-                echo '<input type="submit" value="Post">';
+                echo '<form action="php/deletePost_and_commentPost.php" method="post">';
+                echo '<input type="text" name="comment_content" class="textfields" placeholder="Comment"><br>';
+                echo "<input type='hidden' name='comment_id' value=$postID>";
+                echo "<input type='hidden' name='comment_board' value='blogpost2'>";
+                echo '<input type="submit" name="delete" value="Post">';
                 echo '</form>';
                 echo '</div><br>';
             }

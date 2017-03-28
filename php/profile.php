@@ -3,6 +3,12 @@ session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
+    $firstName = $_POST["firstname"];
+    $lastName = $_POST["lastname"];
+    $city = $_POST["city"];
+    $email = $_POST["email"];
+
+
 
 
     $host = "localhost";
@@ -20,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     else
     {
-        //I WILL HAVE TO CHANGE THIS TO THE CURRENT SESSION
+        //getting the username from the session
         $username = $_SESSION['username'];
 
         //good connection, so do you thing
@@ -40,12 +46,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         {
 
 
-                $firstName = $_POST["firstname"];
-            $lastName = $_POST["lastname"];
-            $city = $_POST["city"];
-            $email = $_POST["email"];
-
-
 
             $sql2 = "UPDATE users SET firstname='$firstName', lastname='$lastName', city='$city', email='$email' WHERE username='$username';";
 
@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             if (mysqli_query($connection, $sql2)){
                 $count = mysqli_affected_rows($connection);
-                echo "Update successful";
+                header("Location: http://localhost/finalproject360/profile.php");
             }
 
 

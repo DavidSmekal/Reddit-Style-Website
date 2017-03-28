@@ -35,17 +35,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $uploadOk = 1;
         } else {
             echo "File is not an image.";
+            echo "<br><a href='../login.php'>Click here to go back</a>";
             $uploadOk = 0;
         }
     }
 // Check file size
     if ($_FILES["userImage"]["size"] > 100000) {
         echo "Sorry, your file is too large.";
+        echo "<br><a href='../login.php'>Click here to go back</a>";
         $uploadOk = 0;
     }
 // Allow certain file formats
     if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "gif" ) {
         echo "Sorry, only JPG, PNG & GIF files are allowed.";
+        echo "<br><a href='../login.php'>Click here to go back</a>";
         $uploadOk = 0;
     }
 
