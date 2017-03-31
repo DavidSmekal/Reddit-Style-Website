@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+//deleting a post
 if (($_SERVER["REQUEST_METHOD"] == "POST") && (($_POST['delete']) == 'Delete') && ( $_SESSION['username'] == 'admin')) {
 
 
@@ -69,6 +70,8 @@ if (($_SERVER["REQUEST_METHOD"] == "POST") && (($_POST['delete']) == 'Delete') &
     mysqli_close($connection);
 
 }
+
+//inserting a comment
 elseif (($_SERVER["REQUEST_METHOD"] == "POST") && ($_POST['delete'] == 'Post')) {
 
 
@@ -137,6 +140,48 @@ elseif (($_SERVER["REQUEST_METHOD"] == "POST") && ($_POST['delete'] == 'Post')) 
 
     mysqli_close($connection);
 
+
+}
+//deleting a comment
+elseif (($_SERVER["REQUEST_METHOD"] == "POST") && (($_POST['delete']) == 'Delete Comment') && ( $_SESSION['username'] == 'admin')) {
+
+
+    $getBoard = $_POST['board'];
+    $getCommentId = $_POST['commentID'];
+
+
+    $host = "localhost";
+    $database = "finalproject360";
+    $user = "root";
+    $password = "";
+
+    $connection = mysqli_connect($host, $user, $password, $database);
+
+    $error = mysqli_connect_error();
+    if ($error != null) {
+        $output = "<p>Unable to connect to database!</p>";
+        exit($output);
+    } else {
+        //good connection, so do you thing
+
+        if ($getBoard == 'blogpost1'){
+
+            $sql = "DELETE FROM commentspost1  WHERE commentId='$getCommentId'";
+
+
+            if (mysqli_query($connection, $sql)) {
+                $count = mysqli_affected_rows($connection);
+                header("Location: http://localhost/finalproject360/topic1.php");
+
+            }
+
+
+        }
+
+
+    }
+
+    mysqli_close($connection);
 
 }
 

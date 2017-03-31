@@ -33,10 +33,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $sql = "SELECT * FROM users where username='$username';";
 
 
-
-
-
-
         $results = mysqli_query($connection, $sql);
 
         //create the variables

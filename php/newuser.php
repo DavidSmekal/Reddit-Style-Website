@@ -21,36 +21,43 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     }
 
+    $image = false;
+
+    //if user doesn't want to upload a picture to their profile, the whole uploading picture won't run
+
+if (!(empty($_POST["userImage"]))){
+    $image = True;
+}
+if ($image) {
+
     //majority of the code taken from https://www.w3schools.com/php/php_file_upload.asp
 /////////////////////////starting file upload php script
     $target_dir = "uploads/";
     $target_file = $target_dir . basename($_FILES["userImage"]["name"]);
     $uploadOk = 1;
-    $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
+    $imageFileType = pathinfo($target_file, PATHINFO_EXTENSION);
 // Check if image file is a actual image or fake image
-    if(isset($_POST["submit"])) {
+    if (isset($_POST["submit"])) {
         $check = getimagesize($_FILES["userImage"]["tmp_name"]);
-        if($check !== false) {
+        if ($check !== false) {
             echo "File is an image - " . $check["mime"] . ".";
             $uploadOk = 1;
         } else {
-            echo "File is not an image.";
-            echo "<br><a href='../login.php'>Click here to go back</a>";
+            header("Location: http://localhost/finalproject360/errorPage.php?errorMessage=" . urlencode("File is not an image."));
             $uploadOk = 0;
         }
     }
 // Check file size
     if ($_FILES["userImage"]["size"] > 100000) {
-        echo "Sorry, your file is too large.";
-        echo "<br><a href='../login.php'>Click here to go back</a>";
+        header("Location: http://localhost/finalproject360/errorPage.php?errorMessage=" . urlencode("Sorry, your file is too large."));
         $uploadOk = 0;
     }
 // Allow certain file formats
-    if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "gif" ) {
-        echo "Sorry, only JPG, PNG & GIF files are allowed.";
-        echo "<br><a href='../login.php'>Click here to go back</a>";
+    if ($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "gif") {
+        header("Location: http://localhost/finalproject360/errorPage.php?errorMessage=" . urlencode("Sorry, only JPG, PNG & GIF files are allowed."));
         $uploadOk = 0;
     }
+}
 
     /////////////////////finished file upload php script
 
@@ -72,6 +79,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $sql = "SELECT * FROM users;";
 
 
+
+
         $results = mysqli_query($connection, $sql);
 
 
@@ -81,56 +90,64 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
                 if (($_POST["username"] == $row['username']) || ($_POST["password1"] == $row['password'])) {
-                    echo "User already exists with this name and/or email<br>";
-                    echo "<a href='newuser.html'>Return to user entry</a>";
+                    header("Location: http://localhost/finalproject360/errorPage.php?errorMessage=" . urlencode("User already exists with this name and/or email."));
 
                 }
+            }
+
 
                 $username = $_POST["username"];
                 $email = $_POST["email"];
                 $password = md5($_POST["password1"]);
 
 
-                $sql2 = "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$password');";
+                $sql2 = "INSERT INTO users (username, email, password, blocked) VALUES ('$username', '$email', '$password', 'no');";
 
 
                 if (mysqli_query($connection, $sql2)) {
                     $count = mysqli_affected_rows($connection);
-                    echo "The account for the user '$username' has been created";
-
-                    //retrieve the user's userID
-                    $userId = "SELECT userID from users WHERE username ='$username'";
 
 
-                    $results = mysqli_query($connection, $userId);
+                        if ($image) {
 
-                    $row = mysqli_fetch_assoc($results);
-
-
-                    $userIdnumber = $row['userID'];
+                            //retrieve the user's userID
+                            $userId = "SELECT userID from users WHERE username ='$username'";
 
 
-                    //enter image into database
-                    $imagedata = file_get_contents($_FILES['userImage']['tmp_name']);
+                            $results = mysqli_query($connection, $userId);
 
-                    $sql = "INSERT INTO userImages (userID, contentType, image) VALUES(?,?,?)";
+                            $row = mysqli_fetch_assoc($results);
 
-                    $stmt = mysqli_stmt_init($connection);
 
-                    mysqli_stmt_prepare($stmt, $sql);
+                            $userIdnumber = $row['userID'];
 
-                    $null = NULL;
 
-                    mysqli_stmt_bind_param($stmt, "isb", $userIdnumber, $imageFileType, $null);
+                            //enter image into database
+                            $imagedata = file_get_contents($_FILES['userImage']['tmp_name']);
 
-                    mysqli_stmt_send_long_data($stmt, 2, $imagedata);
+                            $sql = "INSERT INTO userImages (userID, contentType, image) VALUES(?,?,?)";
 
-                    $result = mysqli_stmt_execute($stmt) or die(mysqli_stmt_error($stmt));
+                            $stmt = mysqli_stmt_init($connection);
 
-                    mysqli_stmt_close($stmt);
+                            mysqli_stmt_prepare($stmt, $sql);
+
+                            $null = NULL;
+
+                            mysqli_stmt_bind_param($stmt, "isb", $userIdnumber, $imageFileType, $null);
+
+                            mysqli_stmt_send_long_data($stmt, 2, $imagedata);
+
+                            $result = mysqli_stmt_execute($stmt) or die(mysqli_stmt_error($stmt));
+
+                            mysqli_stmt_close($stmt);
+                        }
+                        // after user registered, create a session so the user remains logged in
+                        $_SESSION['username'] = $username;
+
+                    header("Location: http://localhost/finalproject360/homepage.php");
 
                 }
-            }
+
         }
 
 

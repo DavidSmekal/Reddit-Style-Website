@@ -17,9 +17,6 @@ if (isset($_SESSION['username'])){
     exit;
 }
 
-
-
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (
@@ -29,8 +26,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "You need to fill in the form.";
 
     }
-
-
 
     $host = "localhost";
     $database = "finalproject360";
@@ -57,14 +52,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         //boolean to trigger invalid echo statement
         $confirmation = false;
 
+        //boolean to trigger being banned
+        $banned = false;
+
         $results = mysqli_query($connection, $sql);
 
         //and fetch results
         while ($row = mysqli_fetch_assoc($results))
         {
+            if ($_POST["username1"] == $row['username'] &&  $hashedPassword == $row['password'] && $row['blocked'] == 'yes'){
+                header("Location: http://localhost/finalproject360/errorPage.php?errorMessage=".urlencode("You have been banned!."));
+            }
+            else if (($_POST["username1"] == $row['username']) &&  ($hashedPassword == $row['password'])) {
 
-
-            if (($_POST["username1"] == $row['username']) &&  ($hashedPassword == $row['password'])) {
 
                 $confirmation = true;
 
@@ -74,26 +74,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 header('Location: http://localhost/finalproject360/homepage.php');
                 break;
-
             }
-
 
         }
         if (!($confirmation)){
-            echo "Username and/or password are invalid";
-            echo "<br><a href='../login.php'>Click here to go back</a>";
+            header("Location: http://localhost/finalproject360/errorPage.php?errorMessage=".urlencode("Username and/or password are invalid."));
         }
-
 
     }
 
-
-
     mysqli_free_result($results);
     mysqli_close($connection);
-
-
-
-
 
 }

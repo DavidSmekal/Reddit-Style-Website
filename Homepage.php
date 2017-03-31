@@ -55,7 +55,7 @@ session_start();
         else
         {
 
-            $sql2 = "SELECT * FROM blogpost1  UNION SELECT * FROM blogpost2 UNION SELECT * FROM blogpost3 ORDER BY rand() limit 6";
+            $sql2 = "SELECT * FROM blogpost1  UNION SELECT * FROM blogpost2 UNION SELECT * FROM blogpost3 ORDER BY vote DESC limit 6";
 
             $results2 = mysqli_query($connection, $sql2);
 
@@ -69,6 +69,8 @@ session_start();
                 $date = $row2['date'];
                 $username = $row2['username'];
                 $postID = $row2['postID'];
+                $postVote = $row2['vote'];
+
 
                 echo '<div id="topOfDiv">';
                 echo "<a href=\"#\">$username</a>&nbsp;&nbsp;";
@@ -76,8 +78,13 @@ session_start();
                 echo '</div>';
 
                 echo "<div id=\"placeholder_for_content\">";
+                echo "<div class=inlineBlock>";
+                echo "<h1>$postVote</h1>";
+                echo "</div>";
+                echo "<div class='inlineBlock centered'>";
                 echo "<p><a href=\"#\">$title</a></p>";
                 echo "<p>$content</p><br>";
+                echo "</div>";
                 echo "</div>";
                 echo"<br><br><br>";
 
@@ -121,7 +128,7 @@ session_start();
                 exit($output);
             } else {
 
-                $sql2 = "SELECT * FROM blogpost1 UNION SELECT * FROM blogpost2 UNION SELECT * FROM blogpost3 ORDER BY rand() LIMIT 3";
+                $sql2 = "SELECT * FROM blogpost1  UNION SELECT * FROM blogpost2 UNION SELECT * FROM blogpost3 ORDER BY vote DESC limit 3";
 
                 $results2 = mysqli_query($connection, $sql2);
 

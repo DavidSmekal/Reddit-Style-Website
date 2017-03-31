@@ -1,24 +1,18 @@
 <?php
 session_start();
-if (!(isset($_SESSION['username']))){
-//user is not logged in
-header("Location: http://localhost/finalproject360/login.php");
-exit;
-}
-?>
 
+?>
 
 <!DOCTYPE html>
 <html>
 
 <head>
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-    <link rel="stylesheet" type="text/css" href="css/makepost.css">
-    <title>Make Post</title>
+    <link rel="stylesheet" type="text/css" href="css/topics.css">
+    <title>Homepage</title>
 </head>
 
 <body>
-
 <ul>
     <li><a href="homepage.php">Home</a></li>
     <li><a href="topic1.php">Liberal</a></li>
@@ -35,31 +29,25 @@ exit;
         <li class="float_right"><a href="administratorPage.php">Administrator</a></li>
     <?php } ?>
 </ul>
+<div id="headline">
+    <h1>Error</h1>
+</div>
+<!-- This is where the body of the page will be -->
+<div class="page_body">
 
-    <div id="headline">
-        <h1>Post: Create a post</h1>
-    </div>
 
-    <!-- This is where the body of the page will be -->
-    <div class="page_body">
-        <div id="post_content">
-            <label>Create Post</label>
-            <form action="php/makepost.php" method="POST">
-                <input type="text" name="title" placeholder="Title"><br>
-                <textarea name="content" cols="40" rows="5" placeholder="Post Content"></textarea><br>
-                <label>Board:</label><br/>
-                <select name="continent">
-             <option>Choose board</option>
-             <option>Liberal</option>
-             <option>Libertarian</option>
-             <option>Conservative</option>
-          </select>
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-    </div>
+    <?php
 
-    <!-- This is the side column on the right -->
+$errorMessage = $_GET['errorMessage'];
+
+echo "<p>$errorMessage</p>";
+echo "<a href=\"javascript:history.go(-1)\">Click here to go back</a>";
+
+    ?>
+
+
+</div>
+<!-- This is the side column on the right -->
 <div id="right_column">
     <div id="search_and_post">
         <form action="searchResults.php" method="post">

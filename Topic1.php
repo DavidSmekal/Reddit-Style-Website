@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 
@@ -5,11 +6,50 @@ session_start();
 <!DOCTYPE html>
 <html>
 
+
 <head>
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="css/topics.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <title>Topic 1</title>
 </head>
+
+<!-- ajax call to vote -->
+<script>
+    function upvote(postId){
+
+        $.ajax({
+            url: "php/upvote.php",
+            type:"post",
+            data:{
+                postID : postId,
+                board: 'blogpost1'
+            },
+
+            success: function(result){
+                alert('Upvoted!');
+
+            }
+        });
+    }
+
+    function downvote(postId){
+
+        $.ajax({
+            url: "php/downvote.php",
+            type:"post",
+            data:{
+                postID : postId,
+                board: 'blogpost1'
+            },
+
+            success: function(result){
+                alert('Downvoted!');
+
+            }
+        });
+    }
+</script>
 
 <body>
 <ul>
@@ -64,30 +104,51 @@ session_start();
             $date = $row2['date'];
             $username = $row2['username'];
             $postID = $row2['postID'];
+            $postVote = $row2['vote'];
 
             echo '<br>';
             echo '<div id="topOfDiv">';
             echo "<a href=\"#\">$username</a>&nbsp;&nbsp;";
             echo "<br><p>Posted: $date</p>";
             echo '</div>';
-
             echo "<div id=\"placeholder_for_content\">";
+            echo "<div class=inlineBlock>";
+            echo "<input type='image' src='images/upvote.png' HEIGHT='20' WIDTH='20' name='saveForm' class='btTxt submit' onclick=upvote('$postID') />";
+            echo "<input type='image' src='images/downvote.png' HEIGHT='20' WIDTH='20' name='saveForm' class='btTxt submit' onclick=downvote('$postID') />";
+            echo "<h1>$postVote</h1>";
+            echo "</div>";
+            echo "<div class='inlineBlock centered'>";
             echo "<p><a href=\"#\">$title</a></p>";
             echo "<p>$content</p><br>";
             echo "</div>";
 
 
-            //admin delete and edit post
-            //I don't know how to edit yet
-            if (isset($_SESSION['username']) && $_SESSION['username'] == 'admin') {
+
+            //admin delete post
+
+            if (isset($_SESSION['username']) && ($_SESSION['username'] == 'admin' || $_SESSION['username'] == $username)) {
                 echo "<div id='adminpannel'>";
-                echo "<p>Edit</p>";
                 echo '<form id="delete" method="post" action="php/deletePost_and_commentPost.php">';
                 echo "<input type='hidden' name='id' value=$postID>";
                 echo "<input type='hidden' name='board' value='blogpost1'>";
                 echo '<input type="submit" name="delete" value="Delete"/>';
+                echo '</form>';
                 echo "</div>";
             }
+
+            //admin edit post
+            if (isset($_SESSION['username']) &&( $_SESSION['username'] == 'admin'|| $_SESSION['username'] == $username)) {
+                echo "<div id='adminpannel'>";
+                echo '<form id="edit" method="post" action="editPostPage.php">';
+                echo "<input type='hidden' name='id2' value=$postID>";
+                echo "<input type='hidden' name='board2' value='blogpost1'>";
+                echo '<input type="submit" name="edit" value="Edit"/>';
+                echo '</form>';
+                echo "</div>";
+            }
+
+            echo "</div>";
+
 
 
             if (!(isset($_SESSION['username']))) {
@@ -106,15 +167,26 @@ session_start();
                 $content = $row3['content'];
                 $postIDrow = $row3['postID'];
                 $username = $row3['username'];
+                $commentID = $row3['commentId'];
                 //retrieves the postID.
                 if ($postIDrow == $postID) {
 
                     echo '<div id="post_comment">';
                     echo "<a href=\"#\">$username</a>&nbsp;&nbsp;";
                     echo "<p>$content</p>";
+                    if (isset($_SESSION['username']) && $_SESSION['username'] == 'admin') {
+
+                        echo '<form id="delete" method="post" action="php/deletePost_and_commentPost.php">';
+                        echo "<input type='hidden' name='board' value='blogpost1'>";
+                        echo "<input type='hidden' name='commentID' value=$commentID>";
+                        echo '<input type="submit" name="delete" value="Delete Comment"/>';
+
+                    }
                     echo '</div>';
 
                 }
+
+
 
             }
 
@@ -171,7 +243,7 @@ session_start();
             exit($output);
         } else {
 
-            $sql2 = "SELECT * FROM blogpost1 UNION SELECT * FROM blogpost2 UNION SELECT * FROM blogpost3 ORDER BY rand() LIMIT 3";
+            $sql2 = "SELECT * FROM blogpost1  UNION SELECT * FROM blogpost2 UNION SELECT * FROM blogpost3 ORDER BY vote DESC limit 3";
 
             $results2 = mysqli_query($connection, $sql2);
 

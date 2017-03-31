@@ -181,7 +181,7 @@ exit;
             exit($output);
         } else {
 
-            $sql2 = "SELECT * FROM blogpost1 UNION SELECT * FROM blogpost2 UNION SELECT * FROM blogpost3 ORDER BY rand() LIMIT 3";
+            $sql2 = "SELECT * FROM blogpost1  UNION SELECT * FROM blogpost2 UNION SELECT * FROM blogpost3 ORDER BY vote DESC limit 3";
 
             $results2 = mysqli_query($connection, $sql2);
 

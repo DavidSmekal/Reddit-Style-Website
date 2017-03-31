@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         //this will post the content into whichever database that was selected by the user
             if ($board == 'Liberal'){
 
-                $sql2 = "INSERT INTO blogpost1 (title, content, date, username) VALUES ('$title', '$content', now(), '$session_user');";
+                $sql2 = "INSERT INTO blogpost1 (title, content, date, username, vote) VALUES ('$title', '$content', now(), '$session_user', '1');";
 
                 if (mysqli_query($connection, $sql2)) {
                     $count = mysqli_affected_rows($connection);
@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($board == 'Libertarian'){
 
-            $sql2 = "INSERT INTO blogpost2 (title, content, date, username) VALUES ('$title', '$content', now(), '$session_user');";
+            $sql2 = "INSERT INTO blogpost2 (title, content, date, username, vote) VALUES ('$title', '$content', now(), '$session_user', '1');";
 
             if (mysqli_query($connection, $sql2)) {
                 $count = mysqli_affected_rows($connection);
@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
         if ($board == 'Conservative'){
 
-            $sql2 = "INSERT INTO blogpost3 (title, content, date, username) VALUES ('$title', '$content', now(), '$session_user');";
+            $sql2 = "INSERT INTO blogpost3 (title, content, date, username, vote) VALUES ('$title', '$content', now(), '$session_user', '1');";
 
             if (mysqli_query($connection, $sql2)) {
                 $count = mysqli_affected_rows($connection);

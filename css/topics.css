@@ -65,3 +65,12 @@ width: 50px;
 .buttonStyle{
    width: 3em;
 }
+.inlineBlock{
+    display:inline-block;
+    text-align: center;
+}
+
+.centered{
+    margin-left: 40%;
+
+}

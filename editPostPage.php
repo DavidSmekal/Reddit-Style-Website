@@ -1,65 +1,65 @@
+
 <?php
 session_start();
-if (!(isset($_SESSION['username']))){
-//user is not logged in
-header("Location: http://localhost/finalproject360/login.php");
-exit;
-}
+
 ?>
-
-
 <!DOCTYPE html>
 <html>
 
+
 <head>
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-    <link rel="stylesheet" type="text/css" href="css/makepost.css">
-    <title>Make Post</title>
+    <link rel="stylesheet" type="text/css" href="css/topics.css">
+    <title>Topic 1</title>
 </head>
 
-<body>
+<!-- ajax call to edit post -->
 
+<body>
 <ul>
     <li><a href="homepage.php">Home</a></li>
     <li><a href="topic1.php">Liberal</a></li>
     <li><a href="topic2.php">Libertarian</a></li>
     <li><a href="topic3.php">Conservative</a></li>
-    <?php if(isset($_SESSION['username'])){ ?>
+    <?php if (isset($_SESSION['username'])) { ?>
         <li class="float_right"><a href="php/loginScript.php?action=logout">Logout</a></li>
-    <?php }else{ ?>
+    <?php } else { ?>
         <li class="float_right"><a href="login.php">Login</a></li>
     <?php } ?>
     <li class="float_right"><a href="profile.php">Profile</a></li>
     <li class="float_right"><a href="makepost.php">Make Post</a></li>
-    <?php if(isset($_SESSION['username']) && $_SESSION['username'] == 'admin'){ ?>
+    <?php if (isset($_SESSION['username']) && $_SESSION['username'] == 'admin') { ?>
         <li class="float_right"><a href="administratorPage.php">Administrator</a></li>
     <?php } ?>
 </ul>
+<div id="headline">
+    <h1>Edit a post</h1>
+</div>
+<!-- This is where the body of the page will be -->
+<div class="page_body">
+    <!-- Post content -->
 
-    <div id="headline">
-        <h1>Post: Create a post</h1>
-    </div>
+    <?php
+    // need to retrieve postId
+    $postId = $_POST["id2"];
+    //need to retrieve board
+    $board = $_POST["board2"];
 
-    <!-- This is where the body of the page will be -->
+    ?>
+
     <div class="page_body">
         <div id="post_content">
-            <label>Create Post</label>
-            <form action="php/makepost.php" method="POST">
-                <input type="text" name="title" placeholder="Title"><br>
-                <textarea name="content" cols="40" rows="5" placeholder="Post Content"></textarea><br>
-                <label>Board:</label><br/>
-                <select name="continent">
-             <option>Choose board</option>
-             <option>Liberal</option>
-             <option>Libertarian</option>
-             <option>Conservative</option>
-          </select>
+            <form action="php/editPost.php" method="POST">
+                <textarea name="content" cols="40" rows="5"></textarea><br>
+                <input type='hidden' name='id2' value=<?php echo $postId?>>
+                <input type='hidden' name='board2' value=<?php echo $board?>>
                 <input type="submit" value="Submit">
             </form>
         </div>
     </div>
 
-    <!-- This is the side column on the right -->
+</div>
+<!-- This is the side column on the right -->
 <div id="right_column">
     <div id="search_and_post">
         <form action="searchResults.php" method="post">
@@ -160,4 +160,3 @@ exit;
 </body>
 
 </html>
-

@@ -50,6 +50,56 @@ session_start();
         <input class="textfields" type="text" name="topic_search" placeholder="Search...">
     </form>
 
+    <hr>
+
+    <h1>Enable/Disable Users</h1>
+
+    <?php
+
+    $host = "localhost";
+    $database = "finalproject360";
+    $user = "root";
+    $password = "";
+
+    $connection = mysqli_connect($host, $user, $password, $database);
+
+    $error = mysqli_connect_error();
+    if ($error != null) {
+        $output = "<p>Unable to connect to database!</p>";
+        exit($output);
+    } else {
+
+        $sql = "SELECT * FROM users";
+
+        $results = mysqli_query($connection, $sql);
+
+
+        while ($row = mysqli_fetch_assoc($results)) {
+
+            $username = $row['username'];
+
+            echo "<a href='#'>$username</a>";
+            echo '<form id="delete" method="post" action="php/enableUser.php">';
+            echo "<input type='hidden' name='username' value=$username>";
+            echo '<input type="submit" name="enable" value="Enable"/>';
+            echo '</form>';
+            echo '<form id=\"delete\" method="post" action="php/disableUser.php">';
+            echo "<input type='hidden' name='username' value=$username>";
+            echo '<input type="submit" name="disable" value="Disable"/>';
+            echo '</form>';
+            echo "<br>";
+
+
+
+        }
+
+    }
+
+    mysqli_free_result($results);
+    mysqli_close($connection);
+
+    ?>
+
 
 </div>
 <!-- This is the side column on the right -->
@@ -80,7 +130,7 @@ session_start();
             exit($output);
         } else {
 
-            $sql2 = "SELECT * FROM blogpost1 UNION SELECT * FROM blogpost2 UNION SELECT * FROM blogpost3 ORDER BY rand() LIMIT 3";
+            $sql2 = "SELECT * FROM blogpost1  UNION SELECT * FROM blogpost2 UNION SELECT * FROM blogpost3 ORDER BY vote DESC limit 3";
 
             $results2 = mysqli_query($connection, $sql2);
 
