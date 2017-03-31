@@ -26,7 +26,7 @@ session_start();
             },
 
             success: function(result){
-                alert('Upvoted!');
+                $(".page_body").load(location.href+" .page_body>*","");
 
             }
         });
@@ -43,7 +43,7 @@ session_start();
             },
 
             success: function(result){
-                alert('Downvoted!');
+                $(".page_body").load(location.href+" .page_body>*","");
 
             }
         });

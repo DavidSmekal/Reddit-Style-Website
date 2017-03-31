@@ -12,6 +12,7 @@ exit;
 <html>
 
 <head>
+    <script type="text/javascript" src="scripts/makepost.js"></script>
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="css/makepost.css">
     <title>Make Post</title>
@@ -43,16 +44,16 @@ exit;
     <!-- This is where the body of the page will be -->
     <div class="page_body">
         <div id="post_content">
-            <label>Create Post</label>
             <form action="php/makepost.php" method="POST">
-                <input type="text" name="title" placeholder="Title"><br>
+                <label>Create Post</label>
+                <input type="text" name="title" placeholder="Title" class="required"><br>
                 <textarea name="content" cols="40" rows="5" placeholder="Post Content"></textarea><br>
                 <label>Board:</label><br/>
-                <select name="continent">
-             <option>Choose board</option>
-             <option>Liberal</option>
-             <option>Libertarian</option>
-             <option>Conservative</option>
+                <select name="continent" id="opt">
+             <option value="no">Choose board</option>
+             <option id="one">Liberal</option>
+             <option id="two">Libertarian</option>
+             <option id="three">Conservative</option>
           </select>
                 <input type="submit" value="Submit">
             </form>
